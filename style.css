@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-wrap {
+  width: 800px;
+  color: #fff;
+  background-color: #111;
+
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #888;
+}
+
+.todo-task {
+  margin: 20px 30px;
+}
+
+input {
+  width: 500px;
+  height: 40px;
+  color: #f3f3f3;
+  outline: 0;
+
+  padding: 10px;
+
+  border: 1px solid gray;
+  background-color: transparent;
+}
+
+.task {
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.task::placeholder {
+  color: #f3f3f3;
+  opacity: 0.5;
+}
+
+.task:focus {
+  border-color: green;
+  opacity: 1;
+}
+
+.submit {
+  width: 100px;
+  height: 50px;
+  color: #f3f3f3;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  border: 1px solid gray;
+  border-radius: 30px;
+
+  transition: all 0.8s;
+}
+.submit:hover {
+  transform: scale(0.8);
+}
+
+.todo-list {
+  margin: 20px 30px;
+}
+.tasks {
+  margin-bottom: 5px;
+}
+
+.task-list {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.answer {
+  width: 550px;
+  height: 50px;
+
+  text-align: center;
+  line-height: 50px;
+  border: 3px outset gray;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.action {
+  width: 40px;
+  height: 40px;
+  color: #f3f3f3;
+  text-transform: uppercase;
+
+  border: 2px solid gray;
+
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: transparent;
+}
+
+.edit {
+  color: darkturquoise;
+}
+.edit:hover {
+  color: #fff;
+  border-color: darkturquoise;
+}
+
+.delete {
+  color: red;
+}
+
+.delete:hover {
+  color: #fff;
+  border-color: red;
+}
